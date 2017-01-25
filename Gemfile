@@ -19,6 +19,7 @@ gem 'haml-rails'
 gem 'high_voltage'
 gem 'mysql2', '~> 0.3.18'
 group :development do
+  gem 'annotate'
   gem 'better_errors'
   gem 'capistrano', '~> 3.0.1'
   gem 'capistrano-bundler'
