@@ -1,18 +1,18 @@
-%p#notice= notice
-
-%p
-  %b Title:
-  = @blog.title
-%p
-  %b Subtext:
-  = @blog.subtext
-%p
-  %b Content:
-  = @blog.content
-%p
-  %b Published date:
-  = @blog.published_date
-
-= link_to 'Edit', edit_blog_path(@blog)
-\|
-= link_to 'Back', blogs_path
+%body
+  %header.intro-header{:style => "background-image: url('/assets/post-bg.jpg')"}
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+          .post-heading
+            %h1= @blog.title
+            %h2.subheading= @blog.subtext
+            %span.meta
+              Posted on
+              -# %a{:href => "#"} Start Bootstrap
+              =@blog.published_date
+  / Post Content
+  %article
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+          = @blog.content
