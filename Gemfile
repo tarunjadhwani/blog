@@ -8,6 +8,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_admin', '~> 1.0'
+# gem 'rich', github: 'bastiaanterhorst/rich'
+# gem 'rich', github: 'kreativgebiet/rich'
+# gem 'rich'
+gem 'bootstrap-wysihtml5-rails', '> 0.3.1.24'
+gem "paperclip", "~> 5.0.0"
 group :development, :test do
   gem 'byebug'
 end
